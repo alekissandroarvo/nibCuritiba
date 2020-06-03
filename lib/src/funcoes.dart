@@ -17,3 +17,23 @@ launchURL_Meditacoes() async {
     throw 'Could not launch $url';
   }
 }
+
+launchURLInstagramNIB() async {
+  const url = 'https://www.instagram.com/nibcuritiba/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+callMe() async {
+    // Android
+    const uri = 'tel:+5541997039657';
+    if (await canLaunch(uri)) {
+      await launch(uri);
+    } else {
+        throw 'Could not launch $uri';
+      }
+    }
+  

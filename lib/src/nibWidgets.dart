@@ -89,8 +89,8 @@ class NibStatelessWidget extends StatelessWidget {
                     
                      Expanded(
                      child: FlatButton.icon(
-                     color: Colors.amber,
-                     onPressed: null, 
+                     //color: Colors.amber,
+                     onPressed: callMe, 
                      icon: Icon(
                     Icons.call
                     ), 
@@ -151,9 +151,7 @@ class NibStatelessWidget extends StatelessWidget {
                     ), 
 
                     FlatButton(
-                      onPressed: () {
-                                             
-                      },
+                      onPressed: launchURLInstagramNIB,
                       child: Container(
                         child: Image.asset('imagens/instagram.jpg'),
                         margin: const EdgeInsets.all(10.0),                
