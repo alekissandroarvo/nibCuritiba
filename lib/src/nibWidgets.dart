@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'funcoes.dart';
 
 class NibApp extends StatelessWidget {
   
@@ -127,9 +129,7 @@ class NibStatelessWidget extends StatelessWidget {
                   Row(
                     children: <Widget>[
                     FlatButton(
-                      onPressed: () {
-                                             
-                      },
+                      onPressed: launchURL_Facebook,
                       child: Container(
                         child: Image.asset('imagens/facebook.png'),
                         margin: const EdgeInsets.all(10.0),                
@@ -192,7 +192,7 @@ class NibStatelessWidget extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('MENSAGENS',              
+              title: Text('CULTOS',              
               style: TextStyle(height: 5, fontSize: 14),
               ),              
               onTap: () {
@@ -228,12 +228,7 @@ class NibStatelessWidget extends StatelessWidget {
               title: Text('MEDITAÇÕES',
               style: TextStyle(height: 5, fontSize: 14),
               ),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
+              onTap: launchURL_Meditacoes,
             ),
             ListTile(
               title: Text('GRUPOS DE ORAÇÃO',
