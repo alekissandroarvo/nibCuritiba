@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 launchURL_Facebook() async {
@@ -5,7 +6,7 @@ launchURL_Facebook() async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
-    throw 'Could not launch $url';
+    throw 'Could not launch Facebook';
   }
 }
 
@@ -14,7 +15,7 @@ launchURL_Meditacoes() async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
-    throw 'Could not launch $url';
+    throw 'Could not launch link para meditações';
   }
 }
 
@@ -23,7 +24,7 @@ launchURLInstagramNIB() async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
-    throw 'Could not launch $url';
+    throw 'Could not launch Instagram';
   }
 }
 
@@ -32,7 +33,7 @@ launchURLMaps() async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
-    throw 'Could not launch $url';
+    throw 'Could not launch GoogleMaps';
   }
 }
 
@@ -45,4 +46,8 @@ callMe() async {
         throw 'Could not launch $uri';
       }
     }
+
+   
+   
+
   

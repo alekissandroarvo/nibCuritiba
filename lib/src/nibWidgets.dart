@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'funcoes.dart';
+import 'auxiliarWidgets.dart';
 
 class NibApp extends StatelessWidget {
   
@@ -8,12 +9,18 @@ class NibApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(      
-      home: NibStatelessWidget(),
+      home: NibStatefulWidget(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class NibStatelessWidget extends StatelessWidget { 
+class NibStatefulWidget extends StatefulWidget {
+  NibState createState()=> NibState();
+}
+
+
+class NibState extends State<NibStatefulWidget> { 
 
   @override
   Widget build(BuildContext context) {
@@ -226,12 +233,12 @@ class NibStatelessWidget extends StatelessWidget {
               title: Text('CULTOS',              
               style: TextStyle(height: 5, fontSize: 14),
               ),              
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
+              onTap: (){
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HorariosCultos()),
+            );
+            },
             ),
             ListTile(
               title: Text('UM COM DEUS',
