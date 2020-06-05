@@ -27,9 +27,18 @@ launchURLInstagramNIB() async {
   }
 }
 
+launchURLMaps() async {
+  const url = 'https://www.google.com.br/maps/place/Nova+Igreja+Batista+(NIB)/@-25.4966247,-49.3066172,17z/data=!3m1!4b1!4m5!3m4!1s0x94dce335f49cb917:0x1d54532da43316a3!8m2!3d-25.4966296!4d-49.3044285?fbclid=IwAR3MMPgHCmYPIhni0-70FLb1onTCfoqgCQWcHHLIgvhen_q77MoZWSGrnsI';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 callMe() async {
     // Android
-    const uri = 'tel:+5541997039657';
+    const uri = 'tel:+554134026747';
     if (await canLaunch(uri)) {
       await launch(uri);
     } else {

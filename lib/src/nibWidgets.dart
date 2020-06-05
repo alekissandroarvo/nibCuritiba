@@ -53,17 +53,11 @@ class NibStatelessWidget extends StatelessWidget {
                         margin: const EdgeInsets.all(10.0),                
                         width: 120.0,
                         height: 140.0, 
-                      ),
-                      Expanded(
-                      child: Text('R. Laudelino Ferreira Lopes-547- Bairro Novo-Curitiba-PR', 
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10)
-                              ),
-                     ),                 
+                      ),                                
                      Expanded(
                      child: FlatButton.icon(
-                     color: Colors.amber,
-                     onPressed: null, 
+                     //color: Colors.amber,
+                     onPressed: launchURLMaps, 
                      icon: Icon(
                     Icons.navigation
                     ), 
@@ -73,7 +67,48 @@ class NibStatelessWidget extends StatelessWidget {
               ],      
           ),
 
-          //Row para contactar
+          //Row Endereço
+          Row(
+            children: <Widget>[
+              Expanded(
+                      child: Text('R. Laudelino Ferreira Lopes-547- Bairro Novo-Curitiba-PR', 
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)
+                              ),
+                     ),       
+            ],
+          ),
+                   Row(
+                    children: <Widget>[
+                      Container(
+                        width: 48.0,
+                        height: 40.0,
+                      ),
+                    ],
+                  ),
+          
+                  //Row de versículo
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text("E perseveravam no ensino dos apóstolos, e na comunhão, no partir do pão e nas orações. At 2.42",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontStyle: FontStyle.italic),
+                        textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                  
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        width: 48.0,
+                        height: 80.0,
+                      ),
+                    ],
+                  ),
+
+                  //Row para contactar
           Row(
             children: <Widget>[
               Expanded(
@@ -113,6 +148,7 @@ class NibStatelessWidget extends StatelessWidget {
                      
                     ],
                   ),
+
                   //Midias Sociais
                   Row(
                     children: <Widget>[
@@ -127,51 +163,48 @@ class NibStatelessWidget extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    children: <Widget>[
-                    FlatButton(
+                    children: <Widget>[                                
+                    Expanded(
+                     child: FlatButton(
                       onPressed: launchURL_Facebook,
                       child: Container(
                         child: Image.asset('imagens/facebook.png'),
                         margin: const EdgeInsets.all(10.0),                
-                        width: 50.0,
-                        height: 50.0, 
+                        width: 40.0,
+                        height: 40.0, 
                     ),   
                     ), 
+                    ),
 
-                    FlatButton(
+                    Expanded(
+                    child: FlatButton(
                       onPressed: () {
                                              
                       },
                       child: Container(
                         child: Image.asset('imagens/twitter.jpg'),
                         margin: const EdgeInsets.all(10.0),                
-                        width: 50.0,
-                        height: 50.0, 
+                        width: 40.0,
+                        height: 40.0, 
                     ),   
                     ), 
+                    ),
 
-                    FlatButton(
+                    Expanded(
+                    child: FlatButton(
                       onPressed: launchURLInstagramNIB,
                       child: Container(
                         child: Image.asset('imagens/instagram.jpg'),
                         margin: const EdgeInsets.all(10.0),                
-                        width: 50.0,
-                        height: 50.0, 
+                        width: 40.0,
+                        height: 40.0, 
                     ),   
                     ), 
-
+                    ),
+                  
                     ],
                   ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: Text("E perseveravam no ensino dos apóstolos, e na comunhão, no partir do pão e nas orações. At 2.42",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontStyle: FontStyle.italic),
-                        textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ],
-                  ),
+                  
 
         ],
       ),
