@@ -63,6 +63,12 @@ flutter:
      - imagens/cultoDomingo.jpg
      - imagens/jovens.jpg
      - imagens/Teens.jpg
+     - imagens/goEdinei.jpg
+     - imagens/goCaio.jpg
+     - imagens/goValter.jpg
+     - imagens/goAlek.jpg
+     - imagens/goEdgar.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

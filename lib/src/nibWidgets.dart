@@ -273,11 +273,13 @@ class NibState extends State<NibStatefulWidget> {
               style: TextStyle(height: 5, fontSize: 14),
               ),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => gruposDeOracao()
+              ),
+                );
+              }
+                
             ),
             ListTile(
               title: Text('MINISTÉRIOS',
