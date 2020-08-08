@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   google_maps_flutter: ^0.5.27+3
   url_launcher: ^5.4.10
+  #sqljocky: 0.0.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -68,6 +69,22 @@ flutter:
      - imagens/goValter.jpg
      - imagens/goAlek.jpg
      - imagens/goEdgar.jpg
+     - imagens/artesMinisterio.png
+     - imagens/casaisMinisterio.png
+     - imagens/decoracaoMinisterio.png
+     - imagens/estacionamentoMinisterio.png
+     - imagens/fotografiaMinisterio.png
+     - imagens/LogisticaEstatisticaMinisterio.png
+     - imagens/louvorMinisterio.png
+     - imagens/novaBabyMinisterio.png
+     - imagens/novaInfantilMinisterio.png
+     - imagens/novaJovens.png
+     - imagens/novaKidsMinisterio.png
+     - imagens/novaTeensMinisterio.png
+     - imagens/redesSociaisMinisterio.png
+     - imagens/somIluminacaoMinisterio.png
+     
+
 
   #   - images/a_dot_ham.jpeg
 
