@@ -112,91 +112,88 @@ class ministerios extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(8),
+        //padding: const EdgeInsets.all(8),
         children: <Widget>[
-          Container(
+          Expanded(
             child: Image.asset('imagens/artesMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/casaisMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/decoracaoMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/estacionamentoMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/fotografiaMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/LogisticaEstatisticaMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/louvorMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/novaBabyMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/novaInfantilMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/novaJovens.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/novaKidsMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/novaTeensMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/redesSociaisMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
           Container(
+            height: 20,
+          ),
+          Expanded(
             child: Image.asset('imagens/somIluminacaoMinisterio.png'),
-            margin: const EdgeInsets.all(10.0),
-            width: 700.0,
-            height: 500.0,
           ),
         ],
       ),
