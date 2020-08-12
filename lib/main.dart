@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'src/nibWidgets.dart';
+import 'src/nibMainWidget.dart';
 
 void main() {
   runApp(NibApp());
 }
-
