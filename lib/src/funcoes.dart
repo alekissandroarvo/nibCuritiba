@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nibCuritiba/src/senibWidget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 import 'dart:async';
 
 launchURL_Facebook() async {
@@ -49,6 +50,11 @@ callMe() async {
   } else {
     throw 'Could not launch $uri';
   }
+}
+
+void launchWhatsApp() {
+  FlutterOpenWhatsapp.sendSingleMessage(
+      "+5541997039657", "Olá, sou ... gostaria de saber...");
 }
 
 send(mybody) async {
