@@ -153,7 +153,7 @@ class NibState extends State<NibStatefulWidget> {
                 ),
                 Expanded(
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: launchWhatsApp,
                     child: Container(
                       child: Image.asset('imagens/whatsup.jpg'),
                       margin: const EdgeInsets.all(10.0),
@@ -184,17 +184,6 @@ class NibState extends State<NibStatefulWidget> {
                     onPressed: launchURL_Facebook,
                     child: Container(
                       child: Image.asset('imagens/facebook.png'),
-                      margin: const EdgeInsets.all(10.0),
-                      width: 40.0,
-                      height: 40.0,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: FlatButton(
-                    onPressed: () {},
-                    child: Container(
-                      child: Image.asset('imagens/twitter.jpg'),
                       margin: const EdgeInsets.all(10.0),
                       width: 40.0,
                       height: 40.0,
