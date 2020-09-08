@@ -79,3 +79,12 @@ materialUmComDeus() async {
     throw 'Could not launch GoogleMaps';
   }
 }
+
+eventosNib() async {
+  const url = 'https://www.facebook.com/nibcuritiba/events/?ref=page_internal';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch GoogleMaps';
+  }
+}
