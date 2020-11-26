@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:nibCuritiba/src/nibFooter.dart';
 import 'package:nibCuritiba/src/umComDeusWidget.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'funcoes.dart';
 import 'horariosCultosWidget.dart';
 import 'ministeriosWidget.dart';
 import 'gruposDeOracaoWidget.dart';
 import 'senibWidget.dart';
-import 'package:footer/footer.dart';
+
 import 'package:footer/footer_view.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+import 'nibAppBar.dart';
 
 class NibApp extends StatelessWidget {
   @override
@@ -29,31 +30,7 @@ class NibState extends State<NibStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       //app bar
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(255, 200, 88, 0.7),
-        title: Row(
-          children: <Widget>[
-            Container(
-              child: Image.asset('imagens/NIB.png'),
-              margin: const EdgeInsets.all(10.0),
-              width: 120.0,
-              height: 140.0,
-            ),
-            Expanded(
-              child: Text(
-                "Firmes na Palavra${"\n"} e no Amor",
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                    fontStyle: FontStyle.italic),
-              ),
-            )
-          ],
-        ),
-      ),
+      appBar: NibAppBar(),
 
       //Body
       body: FooterView(
@@ -123,44 +100,7 @@ class NibState extends State<NibStatefulWidget> {
             ),
           ),
         ],
-        footer: Footer(
-          child: Row(
-            children: <Widget>[
-              IconButton(
-                icon: Icon(Icons.call),
-                onPressed: callMe,
-              ),
-              Container(
-                width: 25,
-              ),
-              IconButton(
-                icon: Icon(MdiIcons.facebook),
-                onPressed: launchURL_Facebook,
-              ),
-              Container(
-                width: 25,
-              ),
-              IconButton(
-                icon: Icon(MdiIcons.instagram),
-                onPressed: launchURLInstagramNIB,
-              ),
-              Container(
-                width: 25,
-              ),
-              IconButton(
-                icon: Icon(MdiIcons.whatsapp),
-                onPressed: launchWhatsApp,
-              ),
-              Container(
-                width: 25,
-              ),
-              IconButton(
-                icon: Icon(Icons.navigation),
-                onPressed: launchURLMaps,
-              )
-            ],
-          ),
-        ),
+        footer: NibFooter(),
         flex: 2,
       ),
       drawer: Drawer(
@@ -197,7 +137,7 @@ class NibState extends State<NibStatefulWidget> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => umComDeus()),
+                  MaterialPageRoute(builder: (context) => UmComDeus()),
                 );
               },
             ),
@@ -209,7 +149,7 @@ class NibState extends State<NibStatefulWidget> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => senibMain()),
+                  MaterialPageRoute(builder: (context) => SenibMain()),
                 );
               },
             ),
@@ -239,7 +179,7 @@ class NibState extends State<NibStatefulWidget> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ministerios()),
+                  MaterialPageRoute(builder: (context) => Ministerios()),
                 );
               },
             ),
